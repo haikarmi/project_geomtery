@@ -4,7 +4,7 @@
 
 #ifndef UNTITLED110_RECTANGLE_H
 #define UNTITLED110_RECTANGLE_H
-#include "Shape.h"
+#include "../Shape/Shape.h"
 using namespace std;
 
 

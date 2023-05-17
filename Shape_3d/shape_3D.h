@@ -5,7 +5,7 @@
 #ifndef UNTITLED110_SHAPE_3D_H
 #define UNTITLED110_SHAPE_3D_H
 
-#include "Shape.h"
+#include "../Shape/Shape.h"
 
 class shape_3D : public Shape {
 private:

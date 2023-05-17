@@ -4,7 +4,7 @@
 
 #ifndef UNTITLED110_CIRCLE_H
 #define UNTITLED110_CIRCLE_H
-#include "Shape.h"
+#include "../Shape/Shape.h"
 #define PI 3.14159265359
 
 class Circle: public Shape {
