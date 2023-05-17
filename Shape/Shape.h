@@ -26,6 +26,8 @@ protected:
 
     //char *getColor() const;
 
+    char* funchelper() const;
+
 };
 
 
