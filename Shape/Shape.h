@@ -24,7 +24,7 @@ protected:
 
     float getWidth() const;
 
-    char *getColor() const;
+    //char *getColor() const;
 
 };
 
