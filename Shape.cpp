@@ -4,6 +4,9 @@
 
 #include "Shape.h"
 #include "cstring"
+#include <iostream>
+using namespace std;
+
 
 
 Shape::~Shape() {
@@ -23,4 +26,9 @@ Shape::Shape(char *color) {
 
 char *Shape::getColor() const {
     return color;
+}
+
+void Shape::print() {
+    cout<< color <<endl;
+
 }

@@ -18,7 +18,7 @@ public:
 
     virtual float area_calculation(float length, float width) =0;
 
-    virtual void print ()  = 0;
+    virtual void print ()  ;
 protected:
 
     char *getColor() const;

@@ -9,7 +9,7 @@
 
 
 
-class Rectangle : public Shape {
+class Rectangle : public virtual Shape {
 private:
     float length;
     float width;
@@ -22,6 +22,10 @@ public:
     void print() ;
     float area_calculation(float length, float width)  ;
     Rectangle(const  Rectangle &other);
+protected:
+    float get_length(){return length;}
+    float get_width(){return width;}
+
 
 };
 

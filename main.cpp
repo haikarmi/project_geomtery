@@ -1,17 +1,20 @@
 #include <iostream>
 #include "Rectangle.h"
+#include "Circle.h"
+#include "Cylinder.h"
+#include "Cuboid.h"
 
 int main() {
-//    Circle C1(3);
+    char bla[5];
+    strcpy(bla,"ger");
+//    Circle C1(3,bla);
 //    C1.print();
-char bla[5];
-strcpy(bla,"ger");
-
-    Rectangle R1(2, 83, bla);
-    R1.print();
-    Rectangle R2 = R1;
-    R2.print();
-
+//    Rectangle R1(2, 83, bla);
+//    R1.print();
+    Cylinder S1(3,2,"BLACK");
+    S1.print();
+    Cuboid c1(3,3,3,"green");
+    c1.print();
 
     return 0;
 }

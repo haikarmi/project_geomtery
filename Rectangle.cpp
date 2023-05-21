@@ -16,10 +16,12 @@ Rectangle::Rectangle(float length, float width, char *color):Shape(color) {
 }
 
 void Rectangle::print() {
+    cout<<"Rectangle: "<<endl;
     cout<< "the length is: "<< this->length<<endl;
     cout<< "the width is: "<<width<<endl;
-    cout<<"the color is "<< getColor()<<endl;
     cout<< "the area calculation Rectangle is: "<< area_calculation(length,width)<< endl;
+    cout<<"the color is: ";  Shape::print() ;
+
 }
 
 
