@@ -3,4 +3,4 @@ project(untitled110)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(untitled110 main.cpp Circle/Circle.cpp Circle/Circle.h Shape/Shape.cpp Shape/Shape.h Shape_3d/shape_3D.cpp Shape_3d/shape_3D.h Rectangle/Rectangle.cpp Rectangle/Rectangle.h)
+add_executable(untitled110 main.cpp Circle.cpp Circle.h Shape.cpp Shape.h shape_3D.cpp shape_3D.h Rectangle.cpp Rectangle.h Cylinder.cpp Cylinder.h)
