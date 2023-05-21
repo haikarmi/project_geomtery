@@ -3,6 +3,7 @@
 #include "Circle.h"
 #include "Cylinder.h"
 #include "Cuboid.h"
+#include "Ring.h"
 
 int main() {
     char bla[5];
@@ -15,6 +16,8 @@ int main() {
     S1.print();
     Cuboid c1(3,3,3,"green");
     c1.print();
+    Ring r1(9.01766634,9,"blu");
+    r1.print();
 
     return 0;
 }
