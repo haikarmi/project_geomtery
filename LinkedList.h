@@ -26,6 +26,7 @@ class LinkedList {
 
             // Copy constructor
             Node(const Node &other);
+//            Node( Shape* other);
 
 
         };////end of node
@@ -45,6 +46,12 @@ class LinkedList {
         // Function to check if an item is present in the linked list
         bool itemExists(int item);
     // Function to copy the contents of another linked list into the current one
+    void add_node(Node* node);
+    void initialize_linked_list_shape_pointers();
+    void print_menu();
+    void creating_linked_list();;
+    static Node shape_to_node(Shape* shape);
+
 
     }; ////end of class LinkedList
 

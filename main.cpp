@@ -4,8 +4,11 @@
 #include "Cylinder.h"
 #include "Cuboid.h"
 #include "Ring.h"
+#include "MyMain.h"
+#include "LinkedList.h"
 
 int main() {
+
     char bla[5];
     strcpy(bla,"ger");
 //    Circle C1(3,bla);
@@ -18,6 +21,9 @@ int main() {
     c1.print();
     Ring r1(9.01766634,9,"blu");
     r1.print();
+    MyMain M1;
+//LinkedList L1;
+//L1.creating_linked_list();
 
     return 0;
 }
