@@ -22,6 +22,8 @@ void Ring::print() {
     cout<<"Ring: "<<endl;
     cout<<"the color is :";
     Shape::print();
+    cout<< "the radius 1 is: "<<get_radius()<<endl;
+    cout<<"the radius 2 is:"<< get_radius1()<<endl;
     cout<<"The area is: "<< area_calculation(get_radius(),radius1)<<endl;
 
 }

@@ -22,12 +22,11 @@ class LinkedList {
             void setValue(Shape *value) { Node::value = value; }
 
             // Destructor to free the memory occupied by the MyNumber object
-            ~Node() { delete value; }
+//            ~Node() { delete value; }
 
             // Copy constructor
             Node(const Node &other);
-//            Node( Shape* other);
-
+            Node(Shape* value= nullptr, Node* next= nullptr) : value(value), next(next) {}
 
         };////end of node
 
@@ -46,11 +45,12 @@ class LinkedList {
         // Function to check if an item is present in the linked list
         bool itemExists(int item);
     // Function to copy the contents of another linked list into the current one
-    void add_node(Node* node);
+   void add_shapes(Shape* Shape_add);
     void initialize_linked_list_shape_pointers();
     void print_menu();
     void creating_linked_list();;
     static Node shape_to_node(Shape* shape);
+    int get_size(){return size;}
 
 
     }; ////end of class LinkedList

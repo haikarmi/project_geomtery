@@ -9,7 +9,7 @@ using namespace std;
 
 
 
-Shape::~Shape() {
+Shape::~Shape() {//TODO:check
 delete[]color;
 }
 

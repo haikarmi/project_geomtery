@@ -19,8 +19,7 @@ LinkedList::LinkedList() {
 
 
 LinkedList::~LinkedList() { // destructor - clean the heap
-    Node *temp1;
-
+    Node *temp1= new Node;
     // Delete all nodes in the list
     while (size > 0) {
         temp1 = head;
@@ -28,18 +27,27 @@ LinkedList::~LinkedList() { // destructor - clean the heap
             temp1 = temp1->get_next();
         }
         delete temp1;
-        size--;
     }
 }
 
-void LinkedList::add_node(LinkedList::Node *node) {
-    Node *curr = head;  // Set current node to head of the linked list
-    while (curr->get_next()!= nullptr){
-        curr=curr->get_next();
-    }
-    curr->set_next(node);
-    node->set_next(nullptr);
+void LinkedList::add_shapes(Shape* Shape_add) {
 
+    Node *new_node = new Node();
+    new_node->setValue(Shape_add);
+    new_node->set_next(nullptr);
+    if (head == nullptr){
+        head = new_node;
+//        ++size;
+    }
+    else if (head != nullptr){
+        Node* curr = head;
+        while (curr->get_next() != nullptr) {
+            curr = curr->get_next();
+        }
+        curr->set_next(new_node);
+//        ++size;
+    }
+//    delete new_node;
 
 }
 

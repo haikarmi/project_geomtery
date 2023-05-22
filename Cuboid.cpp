@@ -18,6 +18,9 @@ void Cuboid::print() {
     cout<<"Cuboid: "<<endl;
     cout<<"the color is :";
     Shape::print();
+    cout<< "the length is: "<< get_length()<<endl;
+    cout<< "the width is: "<<get_width()<<endl;
+    cout<<"the high is:"<< get_high()<<endl;
     cout << "the area capacity Circle is: " << capacity(get_length(), get_width(),get_high()) << endl;
     cout<<"The area is: "<< area_calculation(get_length(),get_width())<<endl;
 
