@@ -1,0 +1,3 @@
+/Users/haikarmi/CLionProjects/untitled110/cmake-build-debug/CMakeFiles/untitled110.dir
+/Users/haikarmi/CLionProjects/untitled110/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/haikarmi/CLionProjects/untitled110/cmake-build-debug/CMakeFiles/rebuild_cache.dir
