@@ -14,14 +14,15 @@ public:
     Shape() ;
     Shape(char * color);
 
-     ~Shape();
+    virtual ~Shape();
 
     virtual float area_calculation(float length, float width) =0;
 
     virtual void print ()  ;
+    char *getColor() const;
+
 protected:
 
-    char *getColor() const;
 
 
 };

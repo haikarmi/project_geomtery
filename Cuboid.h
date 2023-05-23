@@ -14,6 +14,8 @@ public:
     float capacity(float length, float width, float high) ;
     void print()  ;
     float area_calculation(float length, float width);
+    float get_capacity();
+
 
 
 };

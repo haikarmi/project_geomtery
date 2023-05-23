@@ -51,6 +51,11 @@ class LinkedList {
     void creating_linked_list();;
     static Node shape_to_node(Shape* shape);
     int get_size(){return size;}
+    void print_listy();
+    Node* get_head(){return head;}
+    void check_color(char* color);
+    void check_capacity(float capacity);
+
 
 
     }; ////end of class LinkedList

@@ -15,9 +15,9 @@ Cylinder::Cylinder(float radius, float high, char *color) : shape_3D(high), Circ
 
 }
 
-float Cylinder::capacity(float radius, float high) {
-    return (radius * radius * PI * high);
-}
+//float Cylinder::capacity(float radius, float high) {
+//    return (radius * radius * PI * high);
+//}
 
 
 void Cylinder::print() {
@@ -25,7 +25,7 @@ void Cylinder::print() {
 //    cout<< "the area calculation Circle is: "<< area_calculation(get_radius(),get_high())<< endl;
     cout << "Cylinder:" << endl;
    cout<<"the color is :"; Shape::print();
-    cout << "the area capacity Circle is: " << capacity(get_radius(), get_high()) << endl;
+    cout << "the area capacity Circle is: " << capacity(get_radius(),get_radius(), get_high()) << endl;
 cout<<"The area is: "<< area_calculation(get_radius(),get_radius())<<endl;
 
 //    cout<< "the color is ";  Circle::print() ;
@@ -41,5 +41,11 @@ float Cylinder::area_calculation(float radius, float rad) {
 //    2 * PI * radius * ( radius + height )
 temp=(radius+get_high())*radius*2*PI;
     return temp;
+}
+
+float Cylinder::get_capacity() {
+    return capacity(get_radius(),get_radius(),get_high());
+
+
 }
 

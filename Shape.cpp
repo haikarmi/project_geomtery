@@ -30,5 +30,4 @@ char *Shape::getColor() const {
 
 void Shape::print() {
     cout<< color <<endl;
-
 }
