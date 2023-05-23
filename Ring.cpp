@@ -10,7 +10,7 @@ using namespace std;
 float Ring::area_calculation(float radius, float radius1) {
     float temp;
     radius=get_radius();
-   temp= (radius*radius- this->radius1*this->radius1)*PI;
+    temp= (radius*radius- this->radius1*this->radius1)*PI;
     return temp;
 }
 
@@ -26,4 +26,8 @@ void Ring::print() {
     cout<<"the radius 2 is:"<< get_radius1()<<endl;
     cout<<"The area is: "<< area_calculation(get_radius(),radius1)<<endl;
 
+}
+
+float Ring::get_area() {
+    return area_calculation(get_radius(),get_radius1());
 }

@@ -34,6 +34,10 @@ float Circle::area_calculation(float radius, float rad) {
     return (this->radius* this->radius)*PI;
 }
 
+float Circle::get_area() {
+    return area_calculation(get_radius(),get_radius());
+}
+
 
 
 

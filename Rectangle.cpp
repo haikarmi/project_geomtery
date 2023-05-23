@@ -40,6 +40,14 @@ float Rectangle::area_calculation(float length, float width) {
     return (this->length* this->width);
 }
 
+float Rectangle::get_area() const {
+//    return area_calculation(length,width);
+}
+
+float Rectangle::get_area() {
+    return area_calculation(get_length(),get_width());
+}
+
 
 
 

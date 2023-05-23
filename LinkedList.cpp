@@ -117,10 +117,62 @@ void LinkedList::check_capacity(float capacity) {
     }
 }
 
-    void LinkedList::print_shape() {
+void LinkedList::print_shape_cin_name(char *name) {
+    Node *curr = head;
+    if (head == nullptr) {
+        return;
+    } else {
+        for (int i = 0; i < size; ++i) {
+            if (strcmp(curr->get_value()->getName(), name) == 0) {
+                curr->get_value()->print();
+            }
+            curr = curr->get_next();
+
+        }
+    }
+}
+
+float LinkedList::print_sum_areas() {
+    float sum = 0;
+    Node *curr = head;
+    if (head == nullptr) {
+        cout << " the list empty" << endl;
+        return 0;
+    } else {
+        for (int i = 0; i < size; ++i) {
+            sum += curr->get_value()->get_area();
+            curr = curr->get_next();
+        }
+        return sum;
 
 
     }
+}
+
+float LinkedList::print_sum_volume() {
+    float sum = 0;
+    if (head == nullptr) {
+        return 0;
+    } else {
+        Node *curr = head;
+        Shape *shape = curr->get_value();
+        while (curr != nullptr) {
+            if (dynamic_cast<Cylinder *> (shape) != nullptr) {//TODO למה לא נכנס
+                Cylinder *cylinder = dynamic_cast<Cylinder *> (shape);
+                sum += cylinder->get_capacity();
+            }
+
+            if (dynamic_cast<Cuboid *> (shape) != nullptr) {
+                Cuboid *cuboid = dynamic_cast<Cuboid *> (shape);
+                sum += cuboid->get_capacity();
+            }
+            curr = curr->get_next();
+        }
+    }
+    return sum;
+}
+
+
 
 
 

@@ -23,6 +23,11 @@ public:
     float area_calculation(float length, float width)  ;
     Rectangle(const  Rectangle &other);
     char * getName ()const {return "Rectangle";};
+    virtual float get_area()const;
+
+    virtual float get_area();
+
+
 protected:
     float get_length(){return length;}
     float get_width(){return width;}

@@ -55,7 +55,10 @@ class LinkedList {
     Node* get_head(){return head;}
     void check_color(char* color);
     void check_capacity(float capacity);
-    void print_shape();
+    void print_shape_cin_name(char* name);
+    float print_sum_areas();
+    float print_sum_volume();
+
 
 
 

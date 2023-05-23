@@ -17,6 +17,8 @@ public:
     virtual ~Shape();
 
     virtual float area_calculation(float length, float width) =0;
+    virtual float get_area()=0;
+
 
     virtual void print ()  ;
     char *getColor() const;

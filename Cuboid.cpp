@@ -38,3 +38,7 @@ float Cuboid::get_capacity() {
     return capacity(get_length(),get_width(),get_high());
 }
 
+float Cuboid::get_area() {
+    return area_calculation(get_width(),get_width());
+}
+

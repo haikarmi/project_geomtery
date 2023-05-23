@@ -16,11 +16,12 @@ void MyMain::print_menu_main() {
     cout << "Please choose one of the following option" << endl;
     cout << "1.	cin new objects in the list" << endl;
     cout << "2.	Prints all the objects in the list" << endl;
-    cout << "3. Takes a minimal volume, and prints all the shapes whose volume is larger" << endl;
-    cout << "4.	Receives a certain type of shapes, and prints all the shapes in the array of this type." << endl;
-    cout << "5.	• Prints the sum of the areas of all shapes" << endl;
-    cout << "6. • Prints the sum of the volumes of all shapes" << endl;
-    cout << "7.	• Frees all dynamic memory and ends." << endl;
+    cout << "3 .Search by color." << endl;
+    cout << "4. Takes a minimal volume, and prints all the shapes whose volume is larger" << endl;
+    cout << "5.	• Prints the shape like name " << endl;
+    cout << "6.	• Prints the sum of the areas of all shapes" << endl;
+    cout << "7. • Prints the sum of the volumes of all shapes" << endl;
+    cout << "8.	• Frees all dynamic memory and ends." << endl;
 
 }
 
@@ -28,10 +29,8 @@ MyMain::MyMain() {
 
     int choice2 = 0;
     do {
-        do {
             print_menu_main();
             cin >> choice2;
-        } while (choice2 > 7);
         switch (choice2) {
             case 1: {
                 int choice = 0;
@@ -56,9 +55,9 @@ MyMain::MyMain() {
                         cin.ignore(1, '\n');
 
                         cin.get(color, 20);
-                        Circle *c = new Circle(radius, color);
-                        c->print();
-                        list1.add_shapes(c);
+                        Circle *circle = new Circle(radius, color);
+//                        circle->print();
+                        list1.add_shapes(circle);
                         break;
 
 
@@ -76,7 +75,7 @@ MyMain::MyMain() {
 
                         cin.get(color, 20);
                         Rectangle *rectangle = new Rectangle(length, width, color);
-                        rectangle->print();
+//                        rectangle->print();
                         list1.add_shapes(rectangle);
                         break;
 
@@ -94,7 +93,7 @@ MyMain::MyMain() {
 
                         cin.get(color, 20);
                         Cylinder *cylinder = new Cylinder(radius, high, color);
-                        cylinder->print();
+//                        cylinder->print();
                         list1.add_shapes(cylinder);
                         break;
 
@@ -112,7 +111,7 @@ MyMain::MyMain() {
 
                         cin.get(color, 20);
                         Ring *ring = new Ring(radius, radius1, color);
-                        ring->print();
+//                        ring->print();
                         list1.add_shapes(ring);
                         break;
 
@@ -137,6 +136,10 @@ MyMain::MyMain() {
                         list1.add_shapes(cuboid);
                         break;
 
+                    }
+                    default: {
+                        cout << "enter choice with 1-5" << endl;
+                        cin >> choice2;
                     }
 
 
@@ -167,8 +170,35 @@ MyMain::MyMain() {
                 break;
 
             }
+            case 5:{
+                char* name;
+                cout<<"enter name "<<endl;
+                cin.ignore(1, '\n');
+                cin.get(name,20);
+                list1.print_shape_cin_name(name);
+                break;
+
+            }
+            case 6:{
+                cout<<list1.print_sum_areas()<<endl;
+                break;
+            }
+            case 7:{
+                cout<<list1.print_sum_volume()<<endl;
+                break;
+            }
+            default: {
+                cout << "enter choice with 1-8" << endl;
+                cin >> choice2;
+            }
+            case 8:{
+                cout<<"thank you "<<endl;
+                break;
+
+            }
+
         }
-    } while (choice2 != 7);
+    } while (choice2 !=8);
 }
 
 

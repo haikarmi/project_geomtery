@@ -45,7 +45,9 @@ temp=(radius+get_high())*radius*2*PI;
 
 float Cylinder::get_capacity() {
     return capacity(get_radius(),get_radius(),get_high());
+}
 
-
+float Cylinder::get_area() {
+    return area_calculation(get_radius(),get_radius());
 }
 
