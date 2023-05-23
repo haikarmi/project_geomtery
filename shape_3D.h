@@ -13,6 +13,8 @@ private:
 public:
     shape_3D(float high);
     virtual float capacity(float length, float width, float high)=0;
+//    virtual char * getName ()const=0;
+
 protected:
     float get_high()const;
 

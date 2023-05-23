@@ -20,7 +20,7 @@ public:
 
     virtual void print ()  ;
     char *getColor() const;
-
+    virtual char * getName ()const=0;
 protected:
 
 

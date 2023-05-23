@@ -15,6 +15,8 @@ public:
     void print()  ;
     float area_calculation(float length, float width);
     float get_capacity();
+    char * getName ()const {return "Cuboid";};
+
 
 
 

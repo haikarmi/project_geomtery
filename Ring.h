@@ -15,6 +15,8 @@ public:
     Ring(float radius,float radius1, char *color);
     float area_calculation(float radius, float radius1) ;
     void print();
+
+
 };
 
 

@@ -17,6 +17,8 @@ public:
     float capacity(float length, float width, float high);
     float area_calculation(float radius, float rad);
     float get_capacity();
+    char * getName ()const {return "Cylinder";};
+
 
 
 };

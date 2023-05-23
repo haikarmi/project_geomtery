@@ -17,6 +17,8 @@ public:
     float area_calculation(float radius,float rad) ;
     Circle(const Circle & other);
     void print() ;
+    char * getName ()const {return "Circle";};
+
 protected:
     float get_radius() const{return radius;}
 
